@@ -28,8 +28,6 @@ def check(ip, port):
             continue
         elif flag == 61:
             print 'connect fail'
-        elif flag == -3389:
-            sys.exit()
         print flag
         time.sleep(3)
         continue
