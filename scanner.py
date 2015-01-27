@@ -137,21 +137,24 @@ if __name__ == '__main__':
     parser.add_argument('-b', dest='burps', help='burps filelist')
     args = parser.parse_args()
     threads = []
-    if args.ip:
+    if '/' in args.ip:
         ips = listCIDR(args.ip)
-        p = open(args.ports, 'r')
-        ports = p.readlines()
-        for item in range(args.threadsnum):
-            t = threading.Thread(target=port_worker, args=(args.timeout, args.filename, args.burps, ))
-            t.setDaemon(True)
-            t.start()
-            threads.append(t)
-        for ip in ips:
-            for port in ports:
-                port_queue.put((port.strip(), (str(ip))))
-        port_queue.join()
-        p.close()
-        print 'exit'
-        f = open('ex', 'w')
-        f.write('sb')
-        f.close()
+    else:
+        ips = args.ip
+    
+    p = open(args.ports, 'r')
+    ports = p.readlines()
+    for item in range(args.threadsnum):
+        t = threading.Thread(target=port_worker, args=(args.timeout, args.filename, args.burps, ))
+        t.setDaemon(True)
+        t.start()
+        threads.append(t)
+    for ip in ips:
+        for port in ports:
+            port_queue.put((port.strip(), (str(ip))))
+    port_queue.join()
+    p.close()
+    print 'exit'
+    f = open('ex', 'w')
+    f.write('sb')
+    f.close()
