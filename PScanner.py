@@ -100,9 +100,10 @@ def port_run(target, port, timeout, filename, burps):
                         path_req.get_method = lambda: 'HEAD'
                         path_res = urllib2.urlopen(path_req)
                         if len(path_res.read()) != len_404:
-                            print uri + ' success'
-                            f.write(uri + ' ' + str(path_res.code) + '\n')
-                            f.flush()
+                            if path_res.code != 404:
+                                print uri + ' success'
+                                f.write(uri + ' ' + str(path_res.code) + '\n')
+                                f.flush()
                     except urllib2.HTTPError, er:
                         if er.code == 403:
                             print uri + ' ' + str(er.code)
