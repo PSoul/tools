@@ -99,7 +99,7 @@ def port_run(target, port, timeout, filename, burps):
                         path_req = urllib2.Request(uri)
                         path_req.get_method = lambda: 'HEAD'
                         path_res = urllib2.urlopen(path_req)
-                        if len(path_res.read()) == len_404:
+                        if len(path_res.read()) != len_404:
                             print uri + ' success'
                             f.write(uri + ' ' + str(path_res.code) + '\n')
                             f.flush()
