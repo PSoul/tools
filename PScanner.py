@@ -90,8 +90,12 @@ def port_run(target, port, timeout, filename, burps):
                 sys.stderr.write('try to find 404 page \r')
                 sys.stderr.flush()
                 target_404 = url + '/sbsbsbcaocaonima'
-                p_404 = urllib2.urlopen(target_404)
-                len_404 = len(p_404.read())
+                try:
+                    p_404 = urllib2.urlopen(target_404)
+                    len_404 = len(p_404.read())
+                except urllib2.HTTPError, er:
+                    len_404 = 0
+                    pass
                 for path in b:
                     uri = url + path.strip()
                     sys.stderr.write(uri + ' beginning \r')
@@ -100,10 +104,9 @@ def port_run(target, port, timeout, filename, burps):
                         path_req = urllib2.Request(uri)
                         path_res = urllib2.urlopen(path_req)
                         if len(path_res.read()) != len_404:
-                            if path_res.code != 404:
-                                print uri + ' success'
-                                f.write(uri + ' ' + str(path_res.code) + '\n')
-                                f.flush()
+                            print uri + ' success'
+                            f.write(uri + ' ' + str(path_res.code) + '123\n')
+                            f.flush()
                     except urllib2.HTTPError, er:
                         if er.code == 403:
                             print uri + ' ' + str(er.code)
@@ -114,9 +117,10 @@ def port_run(target, port, timeout, filename, burps):
                         #print uri + ' ' + str(e)
                         continue
             except urllib2.HTTPError, e:
-                f.write(url + ' ' + str(e) + '\n')
-                f.flush()
-                #print url, e
+                if e.code == 403:
+                    f.write(url + ' ' + str(e) + '\n')
+                    f.flush()
+                    #print url, e
             except:
                 pass
 
