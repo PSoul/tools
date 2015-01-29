@@ -87,7 +87,8 @@ def port_run(target, port, timeout, filename, burps):
                 sys.stderr.write(url + ' server:' + urlopen.headers['server'] + '\n')
                 f.write(url + ' server: ' + urlopen.headers['server'] + '\n')
                 f.flush()
-                print 'try to find 404 page'
+                sys.stderr.write('try to find 404 page \r')
+                sys.stderr.flush()
                 target_404 = url + '/sbsbsbcaocaonima'
                 p_404 = urllib2.urlopen(target_404)
                 len_404 = len(p_404.read())
@@ -97,7 +98,6 @@ def port_run(target, port, timeout, filename, burps):
                     sys.stderr.flush()
                     try:
                         path_req = urllib2.Request(uri)
-                        path_req.get_method = lambda: 'HEAD'
                         path_res = urllib2.urlopen(path_req)
                         if len(path_res.read()) != len_404:
                             if path_res.code != 404:
