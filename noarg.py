@@ -196,7 +196,6 @@ if __name__ == '__main__':
             t.setDaemon(True)
             t.start()
     port_queue.join()
-    p.close()
     print 'exit'
     f = open('ex', 'w')
     f.write('sb')
