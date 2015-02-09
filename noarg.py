@@ -54,7 +54,7 @@ burp = (
     '/login.do'
     '/shell.asp',
     '/index.shtml',
-    '/index.jhtml'
+    '/index.jhtml',
     '/www/',
     '/www.zip',
     '/www.rar',
