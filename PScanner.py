@@ -1,4 +1,3 @@
-# -*- coding:utf-8 -*-
 # coding = utf-8
 # author = PSoul
 # version = 3.0
@@ -7,13 +6,15 @@
 import Queue
 import threading
 import socket
-import argparse
-import httplib
-import sys
 import os
+import argparse
+import urllib2
+import sys
 
 port_queue = Queue.Queue()
 socket.setdefaulttimeout(3)
+header = {"User-Agent": 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWeb'
+                        'Kit/600.1.25 (KHTML, like Gecko) Version/8.0 Safari/600.1.25'}
 
 
 def ip2bin(ip):
@@ -67,56 +68,60 @@ def listCIDR(c):
 
 
 def port_run(target, port, timeout, filename, burps):
-    header = {"User-Agent": 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWeb'
-                        'Kit/600.1.25 (KHTML, like Gecko) Version/8.0 Safari/600.1.25'}
     with open(filename, 'a') as f:
         with open(burps) as b:
-            if port == '443' or port == '8443':
-                h = httplib.HTTPSConnection(target, port=int(port), timeout=timeout)
+            if port == '443':
+                url = 'https://' + target
+            elif port == '8443':
+                url = 'https://' + target + ':8443'
             else:
-                h = httplib.HTTPConnection(target, port=int(port), timeout=timeout)
-            url = target + ':' + port
+                url = 'http://' + target + ':' + port
+            sys.stdout.write(url + '\r')
+            sys.stdout.flush()
             try:
-                # sys.stdout.write(url + '\r')
-                # sys.stdout.flush()
-                h.request('HEAD', '/', '', header)
-                h_resp = h.getresponse()
-                server_str = h_resp.getheader('server')
-                sys.stderr.write(url + ' server:' + server_str + '\n')
-                f.write(url + ' server: ' + server_str + '\n')
+                request = urllib2.Request(url)
+                request.add_header("User-Agent", 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWeb'
+                                                 'Kit/600.1.25 (KHTML, like Gecko) Version/8.0 Safari/600.1.25')
+                request.get_method = lambda: 'HEAD'
+                urlopen = urllib2.urlopen(request, timeout=timeout)
+                sys.stderr.write(url + ' server:' + urlopen.headers['server'] + '\n')
+                f.write(url + ' server: ' + urlopen.headers['server'] + '\n')
                 f.flush()
-                print 'try to find 404 page ...'
-                h.request('GET', '/sbsbsbcaocaocaonininimma', '', header)
-                len_judge = len(h_resp.read())
+                sys.stderr.write('try to find 404 page \r')
+                sys.stderr.flush()
+                target_404 = url + '/sbsbsbcaocaonima'
+                try:
+                    p_404 = urllib2.urlopen(target_404)
+                    len_404 = len(p_404.read())
+                except urllib2.HTTPError, er:
+                    len_404 = 0
+                    pass
                 for path in b:
                     uri = url + path.strip()
                     sys.stderr.write(uri + ' beginning \r')
                     sys.stderr.flush()
                     try:
-                        h.request('GET', path, '', header)
-                        resp = h.getresponse()
-                        if resp.status == 200:
-                            if len(resp.read()) != len_judge:
-                                print(uri + 'success')
-                                f.write(uri + ' 200' + '\n')
-                                f.flush()
-                        elif resp.status in (403, 301, 302):
-                            print(uri + ' ' + str(resp.status))
-                            sys.stderr.write(uri + ' ' + str(resp.status) + '213')
-                            sys.stderr.flush()
-                            f.write(uri + ' ' + str(resp.status) + '\n')
+                        path_req = urllib2.Request(uri)
+                        path_res = urllib2.urlopen(path_req)
+                        if len(path_res.read()) != len_404:
+                            print uri + ' success'
+                            f.write(uri + ' ' + str(path_res.code) + '\n')
                             f.flush()
-                    except socket.timeout, to:
-                        print uri + str(to)
+                    except urllib2.HTTPError, er:
+                        if er.code == 403:
+                            print uri + ' ' + str(er.code)
+                            f.write(uri + ' ' + str(er.code) + '\n')
+                            f.flush()
                         continue
-                    except Exception, exx:
-                        print exx
+                    except Exception, e:
+                        #print uri + ' ' + str(e)
                         continue
-            except socket.timeout, e:
-                #print url + str(e)
-                pass
-            except Exception, ex:
-                # print url, ex
+            except urllib2.HTTPError, e:
+                if e.code == 403:
+                    f.write(url + ' ' + str(e) + '\n')
+                    f.flush()
+                    #print url, e
+            except:
                 pass
 
 
@@ -156,8 +161,6 @@ if __name__ == '__main__':
             t = threading.Thread(target=port_worker, args=(args.timeout, args.filename, args.burps, ))
             t.setDaemon(True)
             t.start()
-    else:
-        print 'PScanner help'
     port_queue.join()
     p.close()
     print 'exit'
