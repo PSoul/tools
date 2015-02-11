@@ -3,10 +3,12 @@ import threading
 import Queue
 import sys
 import requests
+import os
 import urlparse
 from BeautifulSoup import BeautifulSoup
 
 ip_list = []
+socket.setdefaulttimeout(3)
 
 
 def worker(domain):
@@ -30,6 +32,10 @@ def main():
         fname = sys.argv[2]
     except:
         fname = 'ips.txt'
+    try:
+        os.remove(fname)
+    except:
+        pass
     header = {"User-Agent": 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWeb'
                         'Kit/600.1.25 (KHTML, like Gecko) Version/8.0 Safari/600.1.25'}
     post = {'domain': '%s' % domain, 'b2': 1, 'b3': 1, 'b4': 1}
@@ -57,7 +63,7 @@ def main():
     f = open(fname, 'a')
     print 'the ip list is:'
     for ip in set(new1_list):
-        f.write(ip + '.0/24')
+        f.write(ip + '.0/24 \n')
         print ip + '.0/24'
     f.close()
 

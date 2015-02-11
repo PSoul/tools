@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 # coding = utf-8
 # author = PSoul
-# version = 2.7
+# version = 3.0
 # filename = PScanner.py
 
 import Queue
@@ -156,6 +156,8 @@ if __name__ == '__main__':
             t = threading.Thread(target=port_worker, args=(args.timeout, args.filename, args.burps, ))
             t.setDaemon(True)
             t.start()
+    else:
+        print 'PScanner help'
     port_queue.join()
     p.close()
     print 'exit'
