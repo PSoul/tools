@@ -1,6 +1,6 @@
 # coding = utf-8
 # author = PSoul
-# version = 3.0
+# version = 3.5
 # filename = PScanner.py
 
 import Queue
@@ -84,11 +84,10 @@ def port_run(target, port, timeout, filename, burps):
                                                  'Kit/600.1.25 (KHTML, like Gecko) Version/8.0 Safari/600.1.25')
                 request.get_method = lambda: 'HEAD'
                 urlopen = urllib2.urlopen(request, timeout=timeout)
-                sys.stderr.write(url + ' server:' + urlopen.headers['server'] + '\n')
+                sys.stdout.write(url + ' server:' + urlopen.headers['server'] + '\n')
                 f.write(url + ' server: ' + urlopen.headers['server'] + '\n')
                 f.flush()
-                sys.stderr.write('try to find 404 page \r')
-                sys.stderr.flush()
+                sys.stdout.write('try to find 404 page \n')
                 target_404 = url + '/sbsbsbcaocaonima'
                 try:
                     p_404 = urllib2.urlopen(target_404)
@@ -98,8 +97,8 @@ def port_run(target, port, timeout, filename, burps):
                     pass
                 for path in b:
                     uri = url + path.strip()
-                    sys.stderr.write(uri + ' beginning \r')
-                    sys.stderr.flush()
+                    sys.stdout.write(uri + ' beginning \r')
+                    sys.stdout.flush()
                     try:
                         path_req = urllib2.Request(uri)
                         path_res = urllib2.urlopen(path_req)
