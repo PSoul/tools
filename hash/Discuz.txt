@@ -1,0 +1,2 @@
+["/robots.txt","155625a665aab29f81fe7057ce4e8fe3779f26f6","Discuz! X3"]
+["/robots.txt","ebeeae60d34a50affe92333b734a705a4c3d2ada","Discuz! 7.0.0"]
