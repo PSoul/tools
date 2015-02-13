@@ -13,7 +13,7 @@ def sha1_file(filePath):
 	if not os.path.exists(filePath):
 		return None
 	md5 = hashlib.sha1()
-	with open(filePath,'rb') as _file:
+	with open(filePath, 'rb') as _file:
 		md5.update(_file.read())
 		_file.close()
 		return md5.hexdigest()
@@ -72,7 +72,6 @@ class VHash():
 		return None
 
 
-
 if __name__ == '__main__':
 	url = sys.argv[1]
 	_vhash = VHash()
@@ -84,8 +83,7 @@ if __name__ == '__main__':
 		load_file = down_file(url + path)
 		md5_data = sha1_file(load_file)
 		os.unlink(load_file)
-		CMSName = _vhash.search_hash(path,md5_data)
-		if(CMSName is not None):
-			print(url + path + "----->" + md5_data + "---->" + CMSName)
+		CMSName = _vhash.search_hash(path, md5_data)
+		if CMSName is not None:
+			sys.stdout.write(url + path + "----->" + md5_data + "---->" + CMSName + "\n")
 		time.sleep(0.01)
-

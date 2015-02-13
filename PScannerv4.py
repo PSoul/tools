@@ -1,8 +1,9 @@
 # coding = utf-8
 # author = PSoul
-# version = 3.0
+# version = 4.0
 # filename = PScanner.py
 
+from subprocess import *
 import Queue
 import threading
 import socket
@@ -10,6 +11,7 @@ import os
 import argparse
 import urllib2
 import sys
+
 
 port_queue = Queue.Queue()
 socket.setdefaulttimeout(3)
@@ -85,6 +87,9 @@ def port_run(target, port, timeout, filename, burps):
                 request.get_method = lambda: 'HEAD'
                 urlopen = urllib2.urlopen(request, timeout=timeout)
                 sys.stderr.write(url + ' server:' + urlopen.headers['server'] + '\n')
+                whash = Popen('python webhash.py %s' % url, stdin=PIPE, stdout=PIPE, stderr=PIPE, shell=True)
+                r_whash = whash.stdout.read()
+                sys.stderr.write(r_whash)
                 f.write(url + ' server: ' + urlopen.headers['server'] + '\n')
                 f.flush()
                 sys.stderr.write('try to find 404 page \r')
