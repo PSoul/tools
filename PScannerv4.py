@@ -3,7 +3,6 @@
 # version = 4.0
 # filename = PScanner.py
 
-from subprocess import *
 import Queue
 import threading
 import socket
@@ -14,9 +13,22 @@ import sys
 
 
 port_queue = Queue.Queue()
+op_queue = Queue.Queue()
 socket.setdefaulttimeout(3)
+
 header = {"User-Agent": 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWeb'
                         'Kit/600.1.25 (KHTML, like Gecko) Version/8.0 Safari/600.1.25'}
+
+class RedirctHandler(urllib2.HTTPRedirectHandler):
+
+    def http_error_301(self, req, fp, code, msg, headers):
+        pass
+
+    def http_error_302(self, req, fp, code, msg, headers):
+        pass
+
+opener = urllib2.build_opener(RedirctHandler)
+opener.addheaders = [("User-Agent", 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWeb''Kit/600.1.25 (KHTML, like Gecko) Version/8.0 Safari/600.1.25')]
 
 
 def ip2bin(ip):
@@ -71,50 +83,48 @@ def listCIDR(c):
 
 def port_run(target, port, timeout, filename, burps):
     with open(filename, 'a') as f:
-        with open(burps) as b:
+        try:
+            b = open(burps)
             if port == '443':
                 url = 'https://' + target
             elif port == '8443':
                 url = 'https://' + target + ':8443'
             else:
                 url = 'http://' + target + ':' + port
-            sys.stdout.write(url + '\r')
-            sys.stdout.flush()
+            # sys.stdout.write(url + '\r')
+            # sys.stdout.flush()
+            op_queue.put(url)
             try:
-                request = urllib2.Request(url)
-                request.add_header("User-Agent", 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWeb'
-                                                 'Kit/600.1.25 (KHTML, like Gecko) Version/8.0 Safari/600.1.25')
-                request.get_method = lambda: 'HEAD'
-                urlopen = urllib2.urlopen(request, timeout=timeout)
+                urlopen = opener.open(url, timeout=timeout)
                 sys.stderr.write(url + ' server:' + urlopen.headers['server'] + '\n')
-                whash = Popen('python webhash.py %s' % url, stdin=PIPE, stdout=PIPE, stderr=PIPE, shell=True)
-                r_whash = whash.stdout.read()
-                sys.stderr.write(r_whash)
                 f.write(url + ' server: ' + urlopen.headers['server'] + '\n')
                 f.flush()
-                sys.stderr.write('try to find 404 page \r')
-                sys.stderr.flush()
+                # sys.stderr.write('try to find 404 page \r')
+                # sys.stderr.flush()
+                print('try to find 404 page ')
                 target_404 = url + '/sbsbsbcaocaonima'
                 try:
-                    p_404 = urllib2.urlopen(target_404)
+                    p_404 = opener.open(target_404)
                     len_404 = len(p_404.read())
                 except urllib2.HTTPError, er:
                     len_404 = 0
                     pass
                 for path in b:
                     uri = url + path.strip()
-                    sys.stderr.write(uri + ' beginning \r')
-                    sys.stderr.flush()
+                    # sys.stderr.write(uri + ' beginning \r')
+                    # sys.stderr.flush()
+                    op_queue.put(uri + ' beginning')
                     try:
-                        path_req = urllib2.Request(uri)
-                        path_res = urllib2.urlopen(path_req)
+                        path_res = opener.open(uri, timeout=timeout)
                         if len(path_res.read()) != len_404:
-                            print uri + ' success'
+                            # print uri + ' success'
+                            print(uri + ' success')
                             f.write(uri + ' ' + str(path_res.code) + '\n')
                             f.flush()
                     except urllib2.HTTPError, er:
                         if er.code == 403:
                             print uri + ' ' + str(er.code)
+                            # op_queue.put(uri + ' ' + str(er.code))
                             f.write(uri + ' ' + str(er.code) + '\n')
                             f.flush()
                         continue
@@ -128,6 +138,8 @@ def port_run(target, port, timeout, filename, burps):
                     #print url, e
             except:
                 pass
+        except:
+            pass
 
 
 def port_worker(timeout, filename, burps):
@@ -135,6 +147,13 @@ def port_worker(timeout, filename, burps):
         port, ip = port_queue.get()
         port_run(ip, port, timeout, filename, burps)
         port_queue.task_done()
+
+
+def output():
+    while True:
+        output1 = op_queue.get()
+        sys.stderr.write('{0:50} \r'.format(output1[:50]))
+        sys.stderr.flush()
 
 
 if __name__ == '__main__':
@@ -166,6 +185,7 @@ if __name__ == '__main__':
         t = threading.Thread(target=port_worker, args=(args.timeout, args.filename, args.burps, ))
         t.setDaemon(True)
         t.start()
+    output()
     port_queue.join()
     p.close()
     print 'exit'

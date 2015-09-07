@@ -1,0 +1,7 @@
+http://218.20.227.36:80 HTTP Error 403: Forbidden
+http://218.20.227.36:81 server: Microsoft-IIS/7.5
+http://218.20.227.34:80 server: WWW Server/1.1
+http://218.20.227.37:80 server: WWW Server/1.1
+http://218.20.227.35:80 HTTP Error 403: Forbidden
+http://218.20.227.141:80 server: IBM_HTTP_Server
+http://218.20.227.137:80 server: Microsoft-IIS/6.0
