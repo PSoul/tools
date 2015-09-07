@@ -101,7 +101,7 @@ def port_run(target, port, timeout, filename, burps):
                 f.flush()
                 # sys.stderr.write('try to find 404 page \r')
                 # sys.stderr.flush()
-                print('try to find 404 page ')
+                print('{0:50}'.format('try to find 404 page ...'))
                 target_404 = url + '/sbsbsbcaocaonima'
                 try:
                     p_404 = opener.open(target_404)
@@ -118,12 +118,12 @@ def port_run(target, port, timeout, filename, burps):
                         path_res = opener.open(uri, timeout=timeout)
                         if len(path_res.read()) != len_404:
                             # print uri + ' success'
-                            print(uri + ' success')
+                            print('{0:50} success'.format(uri[:50]))
                             f.write(uri + ' ' + str(path_res.code) + '\n')
                             f.flush()
                     except urllib2.HTTPError, er:
                         if er.code == 403:
-                            print uri + ' ' + str(er.code)
+                            print('{0:50} '.format(uri) + str(er.code))
                             # op_queue.put(uri + ' ' + str(er.code))
                             f.write(uri + ' ' + str(er.code) + '\n')
                             f.flush()
@@ -151,7 +151,7 @@ def port_worker(timeout, filename, burps):
 
 def output():
     while True:
-        output1 = op_queue.get()
+        output1 = op_queue.get(timeout=5)
         sys.stderr.write('{0:50} \r'.format(output1[:50]))
         sys.stderr.flush()
 
