@@ -154,7 +154,10 @@ def port_worker(timeout, filename, burps, noburp):
 
 def output():
     while True:
-        output1 = op_queue.get()
+        try:
+            output1 = op_queue.get(timeout=4)
+        except:
+            break
         sys.stderr.write('{0:50} \r'.format(output1[:50]))
         sys.stderr.flush()
 
