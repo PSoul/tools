@@ -1,18 +1,70 @@
 # coding = utf-8
-# author = PSoul
-# version = 4.5
-# filename = PScanner.py
 
 import Queue
 import threading
 import socket
 import os
-import argparse
 import urllib2
 import sys
-from urlparse import urlparse
 
+ports = [80,
+8080,
+8081,
+443,
+8090,
+9080,
+8000,
+8001,
+8002,
+7001,
+7002,
+7000,
+7080,
+8443,
+9090,
+81,
+8888,
+27017,
+8888,
+8089,
+9200,
+4848,
+9043,
+28017]
 
+burps = [
+"/robots.txt",
+"/admin",
+"/manager",
+"/editor",
+"/images",
+"/ewebeditor",
+'/fckeditor',
+'/console',
+'/phpinfo.php',
+'/phpmyadmin/',
+'/xampp/',
+'/zabbix/',
+'/jmx-console/',
+'/.svn/entries',
+'/nagios/',
+'/index.action',
+'/login.action',
+'/index.do',
+'/database/',
+'/databases/',
+'/1.asp',
+'/shell.asp',
+'/index.shtml',
+'/www/',
+'/www.zip',
+'/www.rar',
+'/webroot.rar',
+'/webroot.zip',
+'/bak.rar',
+'/bak.zip',
+'/fckeditor/editor/filemanager/connectors/'
+]
 port_queue = Queue.Queue()
 op_queue = Queue.Queue()
 socket.setdefaulttimeout(3)
@@ -82,10 +134,10 @@ def listCIDR(c):
         return cidrlist[1:-1]
 
 
-def port_run(target, port, timeout, filename, burps , noburp):
+def port_run(target, port, timeout, filename):
     with open(filename, 'a') as f:
         try:
-            b = open(burps)
+            b = burps
             if port == '443':
                 url = 'https://' + target
             elif port == '8443':
@@ -102,38 +154,36 @@ def port_run(target, port, timeout, filename, burps , noburp):
                 f.flush()
                 # sys.stderr.write('try to find 404 page \r')
                 # sys.stderr.flush()
-                if noburp == False:
-                    print('{0:50}'.format('try to find 404 page ...'))
-                    target_404 = url + '/sbsbsbcaocaonima'
+                print('{0:50}'.format('try to find 404 page ...'))
+                target_404 = url + '/sbsbsbcaocaonima'
+                try:
+                    p_404 = opener.open(target_404)
+                    len_404 = len(p_404.read())
+                except urllib2.HTTPError, er:
+                    len_404 = 0
+                    pass
+                for path in b:
+                    uri = url + path.strip()
+                    # sys.stderr.write(uri + ' beginning \r')
+                    # sys.stderr.flush()
+                    op_queue.put(uri + ' beginning')
                     try:
-                        p_404 = opener.open(target_404)
-                        len_404 = len(p_404.read())
+                        path_res = opener.open(uri, timeout=timeout)
+                        if len(path_res.read()) != len_404:
+                            # print uri + ' success'
+                            print('{0:50} success'.format(uri[:50]))
+                            f.write(uri + ' ' + str(path_res.code) + '\n')
+                            f.flush()
                     except urllib2.HTTPError, er:
-                        len_404 = 0
-                        pass
-                    for path in b:
-                        uri = url + path.strip()
-                        # sys.stderr.write(uri + ' beginning \r')
-                        # sys.stderr.flush()
-                        op_queue.put(uri + ' beginning')
-                        try:
-                            path_res = opener.open(uri, timeout=timeout)
-                            if len(path_res.read()) != len_404:
-                                # print uri + ' success'
-                                print('{0:50} success'.format(uri[:50]))
-                                f.write(uri + ' ' + str(path_res.code) + '\n')
-                                f.flush()
-                        except urllib2.HTTPError, er:
-                            if er.code == 403:
-                                if not urlparse(uri).path.split('/')[-1].find('.'):
-                                    print('{0:50} '.format(uri) + str(er.code))
-                                    # op_queue.put(uri + ' ' + str(er.code))
-                                    f.write(uri + ' ' + str(er.code) + '\n')
-                                    f.flush()
-                            continue
-                        except Exception, e:
-                            #print uri + ' ' + str(e)
-                            continue
+                        if er.code == 403:
+                            print('{0:50} '.format(uri) + str(er.code))
+                            # op_queue.put(uri + ' ' + str(er.code))
+                            f.write(uri + ' ' + str(er.code) + '\n')
+                            f.flush()
+                        continue
+                    except Exception, e:
+                        #print uri + ' ' + str(e)
+                        continue
             except urllib2.HTTPError, e:
                 if e.code == 403:
                     f.write(url + ' ' + str(e) + '\n')
@@ -145,10 +195,10 @@ def port_run(target, port, timeout, filename, burps , noburp):
             pass
 
 
-def port_worker(timeout, filename, burps, noburp):
+def port_worker():
     while True:
         port, ip = port_queue.get()
-        port_run(ip, port, timeout, filename, burps, noburp)
+        port_run(ip, port, 3, 'result')
         port_queue.task_done()
 
 
@@ -160,34 +210,19 @@ def output():
 
 
 if __name__ == '__main__':
-    is_burp = True
     try:
         os.remove('ex')
     except:
         pass
-    parser = argparse.ArgumentParser()
-    parser.add_argument('-i', dest='ip', help='ip target')
-    parser.add_argument('-u', dest='url', help='url target')
-    parser.add_argument('-c', '--threads', dest='threadsnum', help='threads num', type=int, default=125)
-    parser.add_argument('-t', '--timeout', dest='timeout', type=int, default=4)
-    parser.add_argument('-o', dest='filename', default='result.txt')
-    parser.add_argument('-p', dest='ports', help='ports filelist', default='ports.txt')
-    parser.add_argument('-b', dest='burps', help='burps filelist', default='burp.txt')
-    parser.add_argument('-n', dest='noburp', help='noburp', action='store_true', default=False)
-    args = parser.parse_args()
-    p = open(args.ports, 'r')
-    ports = p.readlines()
-    if args.ip:
-        ips = listCIDR(args.ip)
+    ipss = sys.argv[1]
+    if ipss:
+        ips = listCIDR(ipss)
         for ip in ips:
             for port in ports:
-                port_queue.put((port.strip(), (str(ip))))
-    if args.url:
-        url = args.url
-        for port in ports:
-            port_queue.put((port.strip(), (str(url))))
-    for item in range(args.threadsnum):
-        t = threading.Thread(target=port_worker, args=(args.timeout, args.filename, args.burps, args.noburp))
+                port_queue.put((port, (str(ip))))
+
+    for item in range(20):
+        t = threading.Thread(target=port_worker, args=())
         t.setDaemon(True)
         t.start()
     output()
