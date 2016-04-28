@@ -1,0 +1,10 @@
+http://219.136.241.59:80 server: nginx
+http://219.136.241.60:80 server: nginx
+http://219.136.241.59:80/robots.txt 200
+http://219.136.241.60:80/robots.txt 200
+http://219.136.241.60:80/index.php 200
+http://219.136.241.59:80/index.php 200
+http://219.136.241.60:80/robots.txt##xxx123 200
+http://219.136.241.59:80/robots.txt##xxx123 200
+http://219.136.241.60:80/#@$!%^@.asa 200
+http://219.136.241.59:80/#@$!%^@.asa 200

@@ -1,0 +1,1111 @@
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.34:80 server: Microsoft-IIS/7.5
+http://218.20.227.35:8000 server: Apache-Coyote/1.1
+http://218.20.227.37:8080 server: Apache-Coyote/1.1
+http://218.20.227.35:8000/robots.txt 200
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.35:8000/login.action 200
+http://218.20.227.35:80 HTTP Error 403: Forbidden
+http://218.20.227.36:80 HTTP Error 403: Forbidden
+http://218.20.227.37:80 server: WWW Server/1.1
+http://218.20.227.34:80/default.asp 200
+http://218.20.227.34:80/index.asp 200
+http://218.20.227.36:81 server: Microsoft-IIS/7.5
+http://218.20.227.37:80/blog/ 200
+http://218.20.227.37:8888/iisstart.htm 200
+http://218.20.227.37:80/default.aspx 200
+http://218.20.227.34:80 server: Microsoft-IIS/7.5
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.35:80 HTTP Error 403: Forbidden
+http://218.20.227.35:8000 server: Apache-Coyote/1.1
+http://218.20.227.36:80 HTTP Error 403: Forbidden
+http://218.20.227.37:80 server: WWW Server/1.1
+http://218.20.227.37:8080 server: Apache-Coyote/1.1
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.36:81 server: Microsoft-IIS/7.5
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.34:80 server: Microsoft-IIS/7.5
+http://218.20.227.35:80 HTTP Error 403: Forbidden
+http://218.20.227.35:8000 server: Apache-Coyote/1.1
+http://218.20.227.36:80 HTTP Error 403: Forbidden
+http://218.20.227.37:80 server: WWW Server/1.1
+http://218.20.227.37:8080 server: Apache-Coyote/1.1
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.36:81 server: Microsoft-IIS/7.5
+http://218.20.227.130:80 server: Microsoft-IIS/6.0
+http://218.20.227.133:80 server: Microsoft-IIS/5.0
+http://218.20.227.135:80 server: Microsoft-IIS/6.0
+http://218.20.227.138:80 server: Microsoft-IIS/7.5
+http://218.20.227.137:80 server: Microsoft-IIS/6.0
+http://218.20.227.141:80 server: IBM_HTTP_Server
+http://218.20.227.142:80 server: Microsoft-IIS/6.0
+http://218.20.227.148:80 server: Microsoft-IIS/6.0
+http://218.20.227.151:80 server: Apache-Coyote/1.1
+http://218.20.227.152:8001 server: IBM_HTTP_Server
+http://218.20.227.152:80 HTTP Error 403: Forbidden
+http://218.20.227.158:80 server: Microsoft-IIS/5.0
+http://218.20.227.202:80 server: Microsoft-IIS/6.0
+http://218.20.227.203:80 server: Microsoft-IIS/6.0
+http://218.20.227.205:80 server: Microsoft-IIS/6.0
+http://218.20.227.249:8080 server: IocpServer
+http://218.20.227.35:8000 server: Apache-Coyote/1.1
+http://218.20.227.36:80 HTTP Error 403: Forbidden
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.37:80 server: WWW Server/1.1
+http://218.20.227.36:81 server: Microsoft-IIS/7.5
+http://218.20.227.34:80 server: Microsoft-IIS/7.5
+http://218.20.227.37:8080 server: Apache-Coyote/1.1
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.35:80 HTTP Error 403: Forbidden
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.34:80 server: Microsoft-IIS/7.5
+http://218.20.227.35:80 HTTP Error 403: Forbidden
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.35:8000 server: Apache-Coyote/1.1
+http://218.20.227.36:80 HTTP Error 403: Forbidden
+http://218.20.227.37:80 server: WWW Server/1.1
+http://218.20.227.37:8080 server: Apache-Coyote/1.1
+http://218.20.227.36:81 server: Microsoft-IIS/7.5
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.35:80 HTTP Error 403: Forbidden
+http://218.20.227.36:80 HTTP Error 403: Forbidden
+http://218.20.227.37:80 server: WWW Server/1.1
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.34:80 server: Microsoft-IIS/7.5
+http://218.20.227.37:8080 server: Apache-Coyote/1.1
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.35:8000 server: Apache-Coyote/1.1
+http://218.20.227.36:81 server: Microsoft-IIS/7.5
+http://218.20.227.35:80 HTTP Error 403: Forbidden
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.34:80 server: Microsoft-IIS/7.5
+http://218.20.227.35:8000 server: Apache-Coyote/1.1
+http://218.20.227.36:80 HTTP Error 403: Forbidden
+http://218.20.227.37:80 server: WWW Server/1.1
+http://218.20.227.37:8080 server: Apache-Coyote/1.1
+http://218.20.227.36:81 server: Microsoft-IIS/7.5
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.35:80 HTTP Error 403: Forbidden
+http://218.20.227.35:8000 server: Apache-Coyote/1.1
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.34:80 server: Microsoft-IIS/7.5
+http://218.20.227.36:80 HTTP Error 403: Forbidden
+http://218.20.227.37:80 server: WWW Server/1.1
+http://218.20.227.37:8080 server: Apache-Coyote/1.1
+http://218.20.227.36:81 server: Microsoft-IIS/7.5
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.35:80 HTTP Error 403: Forbidden
+http://218.20.227.36:80 HTTP Error 403: Forbidden
+http://218.20.227.37:80 server: WWW Server/1.1
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.35:8000 server: Apache-Coyote/1.1
+http://218.20.227.36:81 server: Microsoft-IIS/7.5
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.37:8080 server: Apache-Coyote/1.1
+http://218.20.227.35:80 HTTP Error 403: Forbidden
+http://218.20.227.36:80 HTTP Error 403: Forbidden
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.34:80 server: Microsoft-IIS/7.5
+http://218.20.227.37:80 server: WWW Server/1.1
+http://218.20.227.35:8000 server: Apache-Coyote/1.1
+http://218.20.227.37:8080 server: Apache-Coyote/1.1
+http://218.20.227.36:81 server: Microsoft-IIS/7.5
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.34:80 server: Microsoft-IIS/7.5
+http://218.20.227.35:80 HTTP Error 403: Forbidden
+http://218.20.227.36:80 HTTP Error 403: Forbidden
+http://218.20.227.37:80 server: WWW Server/1.1
+http://218.20.227.37:8080 server: Apache-Coyote/1.1
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.36:81 server: Microsoft-IIS/7.5
+http://218.20.227.35:8000 server: Apache-Coyote/1.1
+http://218.20.227.35:80 HTTP Error 403: Forbidden
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.35:8000 server: Apache-Coyote/1.1
+http://218.20.227.34:80 server: Microsoft-IIS/7.5
+http://218.20.227.36:80 HTTP Error 403: Forbidden
+http://218.20.227.37:80 server: WWW Server/1.1
+http://218.20.227.37:8080 server: Apache-Coyote/1.1
+http://218.20.227.36:81 server: Microsoft-IIS/7.5
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.37:8888 server: Microsoft-IIS/7.5
+http://218.20.227.35:80 HTTP Error 403: Forbidden
+http://218.20.227.34:80 server: Microsoft-IIS/7.5
+http://218.20.227.36:80 HTTP Error 403: Forbidden
+http://218.20.227.34:80/default.asp 200
+http://218.20.227.34:80/index.asp 200
+http://218.20.227.34:80/#@$!%^@.asa 200
+http://218.20.227.35:80 HTTP Error 403: Forbidden
+http://218.20.227.34:80 server: Microsoft-IIS/7.5
+http://218.20.227.36:80 HTTP Error 403: Forbidden
+http://218.20.227.36:81 server: Microsoft-IIS/7.5
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.35:80 HTTP Error 403: Forbidden
+http://218.20.227.36:80 HTTP Error 403: Forbidden
+http://218.20.227.34:80 server: Microsoft-IIS/7.5
+http://218.20.227.36:81 server: Microsoft-IIS/7.5
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.35:80 HTTP Error 403: Forbidden
+http://218.20.227.36:80 HTTP Error 403: Forbidden
+http://218.20.227.34:80 server: Microsoft-IIS/7.5
+http://218.20.227.36:81 server: Microsoft-IIS/7.5
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.34:80/default.asp 200
+http://218.20.227.34:80/index.asp 200
+http://218.20.227.34:8081/iisstart.htm 200
+http://218.20.227.36:81/iisstart.htm 200
+http://218.20.227.34:80/#@$!%^@.asa 200
+http://218.20.227.34:8081/#@$!%^@.asa 200
+http://218.20.227.36:81/#@$!%^@.asa 200
+http://218.20.227.130:80 server: Microsoft-IIS/6.0
+http://218.20.227.131:80 server: nginx/1.9.9
+http://218.20.227.131:8080 server: Apache-Coyote/1.1
+http://218.20.227.131:80/phpmyadmin/ 200
+http://218.20.227.131:80/xampp/ 200
+http://218.20.227.131:80/zabbix/ 200
+http://218.20.227.131:80/jmx-console/ 200
+http://218.20.227.131:80/nagios/ 200
+http://218.20.227.131:80/database/ 200
+http://218.20.227.131:80/databases/ 200
+http://218.20.227.131:80/www/ 200
+http://218.20.227.131:80/fckeditor/editor/filemanager/connectors/ 200
+http://218.20.227.131:80/1/ 200
+http://218.20.227.131:80/1admin/ 200
+http://218.20.227.131:80/2/ 200
+http://218.20.227.131:80/3/ 200
+http://218.20.227.131:80/homepage/ 200
+http://218.20.227.131:80/API/ 200
+http://218.20.227.131:80/Config/ 200
+http://218.20.227.131:80/FAQ/ 200
+http://218.20.227.131:80/FS_InterFace/ 200
+http://218.20.227.131:80/gbook/ 200
+http://218.20.227.131:80/Foosun_Data/ 200
+http://218.20.227.131:80/GuestBook/ 200
+http://218.20.227.131:80/KS_Data/ 200
+http://218.20.227.131:80/Modules/ 200
+http://218.20.227.131:80/MuAdmin/ 200
+http://218.20.227.131:80/Plus/ 200
+http://218.20.227.131:80/Search/ 200
+http://218.20.227.131:80/Templets/ 200
+http://218.20.227.131:80/User/reg/ 200
+http://218.20.227.131:80/Vote/ 200
+http://218.20.227.131:80/WEB/ 200
+http://218.20.227.131:80/_admin/ 200
+http://218.20.227.131:80/_ewebeditor/ 200
+http://218.20.227.131:80/_upload/ 200
+http://218.20.227.131:80/a/ 200
+http://218.20.227.131:80/pay/ 200
+http://218.20.227.131:80/attachment/ 200
+http://218.20.227.131:80/themes/ 200
+http://218.20.227.131:80/installer/ 200
+http://218.20.227.131:80/utility/ 200
+http://218.20.227.131:80/Agent/ 200
+http://218.20.227.131:80/aadmin/ 200
+http://218.20.227.131:80/ad_login/ 200
+http://218.20.227.131:80/ad_manage/ 200
+http://218.20.227.131:80/addmember/ 200
+http://218.20.227.131:80/adduser/ 200
+http://218.20.227.131:80/adm_login/ 200
+http://218.20.227.130:80/Search.asp 200
+http://218.20.227.131:80/admin/ 200
+http://218.20.227.131:80/admin/Editor/ 200
+http://218.20.227.131:80/admin/_eWebEditor/ 200
+http://218.20.227.131:80/admin/default/ 200
+http://218.20.227.131:80/admin/eWebEditor/ 200
+http://218.20.227.131:80/admin/eweb/ 200
+http://218.20.227.131:80/admin/fckeditor/ 200
+http://218.20.227.131:80/admin/fck/ 200
+http://218.20.227.131:80/book/admin/ 200
+http://218.20.227.131:80/data/editor/ 200
+http://218.20.227.131:80/admin/index/ 200
+http://218.20.227.131:80/admin/login/ 200
+http://218.20.227.131:80/admin/manage/ 200
+http://218.20.227.131:80/admin1/ 200
+http://218.20.227.131:80/admin2/ 200
+http://218.20.227.131:80/admin88/ 200
+http://218.20.227.131:80/admin99/ 200
+http://218.20.227.131:80/admin123/ 200
+http://218.20.227.133:8080 server: Apache-Coyote/1.1
+http://218.20.227.131:80/admin_/ 200
+http://218.20.227.131:80/admin_1/ 200
+http://218.20.227.131:80/admin_admin/ 200
+http://218.20.227.131:80/admin_delete/ 200
+http://218.20.227.131:80/admin_manage/ 200
+http://218.20.227.131:80/admin_manager/ 200
+http://218.20.227.131:80/admin_edit/ 200
+http://218.20.227.131:80/admin_index/ 200
+http://218.20.227.131:80/admin_login/ 200
+http://218.20.227.131:80/admin_main/ 200
+http://218.20.227.131:80/admin_user/ 200
+http://218.20.227.131:80/adminadduser/ 200
+http://218.20.227.131:80/admindelete/ 200
+http://218.20.227.131:80/adminedit/ 200
+http://218.20.227.131:80/adminlogin/ 200
+http://218.20.227.131:80/adminmember/ 200
+http://218.20.227.131:80/admintab/ 200
+http://218.20.227.131:80/admintest/ 200
+http://218.20.227.131:80/adminuserlogin/ 200
+http://218.20.227.131:80/art/ 200
+http://218.20.227.131:80/article/ 200
+http://218.20.227.131:80/ask/ 200
+http://218.20.227.131:80/aspnet_client/ 200
+http://218.20.227.131:80/avi/ 200
+http://218.20.227.131:80/bbs/ 200
+http://218.20.227.131:80/bianji/ 200
+http://218.20.227.131:80/bin/ 200
+http://218.20.227.131:80/bjq/ 200
+http://218.20.227.131:80/blog/ 200
+http://218.20.227.131:80/book/ 200
+http://218.20.227.131:80/boy/ 200
+http://218.20.227.131:80/check/ 200
+http://218.20.227.131:80/checkadmin/ 200
+http://218.20.227.131:80/chkadmin/ 200
+http://218.20.227.131:80/chklogin/ 200
+http://218.20.227.131:80/club/ 200
+http://218.20.227.131:80/cms/ 200
+http://218.20.227.131:80/cms1/ 200
+http://218.20.227.131:80/config/admin/ 200
+http://218.20.227.131:80/count/ 200
+http://218.20.227.131:80/count/admin/ 200
+http://218.20.227.131:80/d/ 200
+http://218.20.227.131:80/data/ 200
+http://218.20.227.131:80/data/admin/ 200
+http://218.20.227.131:80/database/ 200
+http://218.20.227.131:80/databases/ 200
+http://218.20.227.131:80/date/ 200
+http://218.20.227.131:80/db/ 200
+http://218.20.227.131:80/dbase/ 200
+http://218.20.227.131:80/dede/ 200
+http://218.20.227.131:80/delete/ 200
+http://218.20.227.131:80/denglu/ 200
+http://218.20.227.131:80/devel/ 200
+http://218.20.227.131:80/down/ 200
+http://218.20.227.131:80/e/ 200
+http://218.20.227.131:80/e/admin/ 200
+http://218.20.227.131:80/edit/ 200
+http://218.20.227.131:80/editmember/ 200
+http://218.20.227.131:80/editor/ 200
+http://218.20.227.131:80/editors/ 200
+http://218.20.227.131:80/edituser/ 200
+http://218.20.227.131:80/eeditor/ 200
+http://218.20.227.131:80/eweb/ 200
+http://218.20.227.131:80/ewebeditor/ 200
+http://218.20.227.131:80/exit/ 200
+http://218.20.227.131:80/fck/ 200
+http://218.20.227.131:80/fckeditor/ 200
+http://218.20.227.131:80/fd_upload/ 200
+http://218.20.227.131:80/fileeditor/ 200
+http://218.20.227.131:80/files/ 200
+http://218.20.227.131:80/fileseditor/ 200
+http://218.20.227.131:80/forum/ 200
+http://218.20.227.131:80/girl/ 200
+http://218.20.227.131:80/html/admin/ 200
+http://218.20.227.131:80/html/data/ 200
+http://218.20.227.131:80/image/admin/ 200
+http://218.20.227.131:80/images/admin/ 200
+http://218.20.227.131:80/girls/ 200
+http://218.20.227.131:80/gldl/ 200
+http://218.20.227.131:80/guanli/ 200
+http://218.20.227.131:80/guestbook/admin/ 200
+http://218.20.227.131:80/sp/ 200
+http://218.20.227.131:80/ka/ 200
+http://218.20.227.131:80/core/ 200
+http://218.20.227.131:80/guestbook/data/ 200
+http://218.20.227.131:80/guestbook/database/ 200
+http://218.20.227.131:80/help/ 200
+http://218.20.227.131:80/houtai/ 200
+http://218.20.227.131:80/houtaiguanli/ 200
+http://218.20.227.131:80/htdocs/ 200
+http://218.20.227.131:80/htgl/ 200
+http://218.20.227.131:80/html/ 200
+http://218.20.227.131:80/idea/ 200
+http://218.20.227.131:80/ideas/ 200
+http://218.20.227.131:80/images/ 200
+http://218.20.227.131:80/img/ 200
+http://218.20.227.131:80/imgs/ 200
+http://218.20.227.131:80/inc/ 200
+http://218.20.227.131:80/include/ 200
+http://218.20.227.131:80/includeinc/ 200
+http://218.20.227.131:80/includes/ 200
+http://218.20.227.131:80/includes/fckeditor/ 200
+http://218.20.227.131:80/incoming/ 200
+http://218.20.227.131:80/incsub/ 200
+http://218.20.227.131:80/index_admin/ 200
+http://218.20.227.131:80/index_manage/ 200
+http://218.20.227.131:80/install/ 200
+http://218.20.227.131:80/item/ 200
+http://218.20.227.131:80/js/ 200
+http://218.20.227.131:80/languages/ 200
+http://218.20.227.131:80/log/ 200
+http://218.20.227.131:8080/index.html 200
+http://218.20.227.131:80/login/ 200
+http://218.20.227.131:80/login_admin/ 200
+http://218.20.227.131:80/login_out/ 200
+http://218.20.227.131:80/logout/ 200
+http://218.20.227.131:80/luntan/ 200
+http://218.20.227.131:80/main/ 200
+http://218.20.227.131:80/man/ 200
+http://218.20.227.131:80/manage/ 200
+http://218.20.227.131:80/manage_index/ 200
+http://218.20.227.131:80/manager/ 200
+http://218.20.227.131:80/manual/ 200
+http://218.20.227.131:80/member/ 200
+http://218.20.227.131:80/members/ 200
+http://218.20.227.131:80/misc/ 200
+http://218.20.227.131:80/movie/ 200
+http://218.20.227.131:80/mrtg/ 200
+http://218.20.227.131:80/new/ 200
+http://218.20.227.131:80/neweditor/ 200
+http://218.20.227.131:80/news/ 200
+http://218.20.227.131:80/newseditor/ 200
+http://218.20.227.131:80/newsite/ 200
+http://218.20.227.131:80/none/ 200
+http://218.20.227.131:80/packages/ 200
+http://218.20.227.131:80/party/ 200
+http://218.20.227.131:80/php_admin/ 200
+http://218.20.227.131:80/phpmyadmin/ 200
+http://218.20.227.131:80/pic/ 200
+http://218.20.227.131:80/play/ 200
+http://218.20.227.131:80/private/ 200
+http://218.20.227.131:80/program/ 200
+http://218.20.227.131:80/programming/ 200
+http://218.20.227.131:80/programs/ 200
+http://218.20.227.131:80/public/ 200
+http://218.20.227.131:80/reg/ 200
+http://218.20.227.131:80/rmvb/ 200
+http://218.20.227.131:80/root/ 200
+http://218.20.227.131:80/rss/ 200
+http://218.20.227.131:80/rar/ 200
+http://218.20.227.131:80/secret/ 200
+http://218.20.227.131:80/secrets/ 200
+http://218.20.227.131:80/server-info/ 200
+http://218.20.227.131:80/server-status/ 200
+http://218.20.227.131:80/server_stats/ 200
+http://218.20.227.131:80/set/ 200
+http://218.20.227.131:80/setting/ 200
+http://218.20.227.131:80/setup/ 200
+http://218.20.227.131:80/shop/ 200
+http://218.20.227.131:80/shuaiwebDB/ 200
+http://218.20.227.131:80/site/ 200
+http://218.20.227.131:80/special/ 200
+http://218.20.227.131:80/sql/ 200
+http://218.20.227.131:80/styles/ 200
+http://218.20.227.131:80/superadmin/ 200
+http://218.20.227.131:80/support/ 200
+http://218.20.227.131:80/template/ 200
+http://218.20.227.131:80/tenpay/ 200
+http://218.20.227.131:80/test/ 200
+http://218.20.227.131:80/test1/ 200
+http://218.20.227.131:80/tools/ 200
+http://218.20.227.131:80/up/ 200
+http://218.20.227.131:80/update/ 200
+http://218.20.227.131:80/update/ 200
+http://218.20.227.131:80/upfile/ 200
+http://218.20.227.131:80/upfiles/ 200
+http://218.20.227.131:80/upload/ 200
+http://218.20.227.131:80/upload/admin/ 200
+http://218.20.227.131:80/uploadfile/ 200
+http://218.20.227.131:80/uploadfiles/ 200
+http://218.20.227.131:80/uploadimg/ 200
+http://218.20.227.131:80/uploads/ 200
+http://218.20.227.131:80/user/ 200
+http://218.20.227.131:80/user/login/ 200
+http://218.20.227.131:80/userfiles/ 200
+http://218.20.227.131:80/users/ 200
+http://218.20.227.131:80/video/ 200
+http://218.20.227.131:80/plugin/ 200
+http://218.20.227.131:80/webeditor/ 200
+http://218.20.227.131:80/weblog/ 200
+http://218.20.227.131:80/webmaster/ 200
+http://218.20.227.131:80/website/ 200
+http://218.20.227.131:80/xtwh/ 200
+http://218.20.227.131:80/管理/ 200
+http://218.20.227.133:8080/index.html 200
+http://218.20.227.130:80/index.asp 200
+http://218.20.227.131:80/新建文件夹/ 200
+http://218.20.227.131:80/home/ 200
+http://218.20.227.131:80/www/ 200
+http://218.20.227.131:80/bak/ 200
+http://218.20.227.131:80/backup/ 200
+http://218.20.227.131:80/backups/ 200
+http://218.20.227.131:80/webroot/ 200
+http://218.20.227.131:80/databackup/ 200
+http://218.20.227.131:80/databackups/ 200
+http://218.20.227.131:80/beifen/ 200
+http://218.20.227.131:80/网站备份/ 200
+http://218.20.227.131:80/备份/ 200
+http://218.20.227.131:80/ftp/ 200
+http://218.20.227.131:80/include/FCKeditor/ 200
+http://218.20.227.131:80/htmlEditor/ 200
+http://218.20.227.131:80/wwwroot/ 200
+http://218.20.227.131:80/userupload/ 200
+http://218.20.227.131:80/opt/ 200
+http://218.20.227.131:80/en/ 200
+http://218.20.227.131:80/cn/ 200
+http://218.20.227.131:80/admin_upload/ 200
+http://218.20.227.131:80/ewebeditor/UploadFile/ 200
+http://218.20.227.131:80/ckeditor/ 200
+http://218.20.227.131:80/txt/ 200
+http://218.20.227.131:80/admin3/ 200
+http://218.20.227.131:80/admin4/ 200
+http://218.20.227.131:80/adminbak/ 200
+http://218.20.227.131:80/adminnew/ 200
+http://218.20.227.131:80/wwwroot2/ 200
+http://218.20.227.131:80/index/ 200
+http://218.20.227.131:80/123/ 200
+http://218.20.227.131:80/Controls/ 200
+http://218.20.227.131:80/Dialog/ 200
+http://218.20.227.131:80/css/ 200
+http://218.20.227.131:80/DevAdmin/ 200
+http://218.20.227.131:80/ClientScript/ 200
+http://218.20.227.131:80/Forums/ 200
+http://218.20.227.131:80/FeedManager/ 200
+http://218.20.227.131:80/deep_inc/ 200
+http://218.20.227.131:80/Services/ 200
+http://218.20.227.131:80/Setup/ 200
+http://218.20.227.131:80/WebStore/ 200
+http://218.20.227.131:80/SiteOffice/ 200
+http://218.20.227.131:80/Survey/ 200
+http://218.20.227.131:80/picture/ 200
+http://218.20.227.131:80/myweb/ 200
+http://218.20.227.131:80/Secure/ 200
+http://218.20.227.131:80/Poll/ 200
+http://218.20.227.131:80/NeatUpload/ 200
+http://218.20.227.131:80/Admin_mj/ 200
+http://218.20.227.131:80/ButtonImage/ 200
+http://218.20.227.131:80/Example/ 200
+http://218.20.227.131:80/App_Data/ 200
+http://218.20.227.131:80/admin/database/ 200
+http://218.20.227.131:80/admin/data/ 200
+http://218.20.227.131:80/go/ 200
+http://218.20.227.131:80/网站/ 200
+http://218.20.227.131:80/网站2/ 200
+http://218.20.227.131:80/liuyan/ 200
+http://218.20.227.131:80/ly/ 200
+http://218.20.227.131:80/1.asp/ 200
+http://218.20.227.131:80/t/ 200
+http://218.20.227.131:80/1.php/ 200
+http://218.20.227.131:80/open/ 200
+http://218.20.227.131:80/show/ 200
+http://218.20.227.131:80/http/ 200
+http://218.20.227.131:80/gl/ 200
+http://218.20.227.131:80/admin/bak/ 200
+http://218.20.227.131:80/flash/ 200
+http://218.20.227.131:80/administrator/ 200
+http://218.20.227.131:80/cache/ 200
+http://218.20.227.131:80/components/ 200
+http://218.20.227.131:80/installation/ 200
+http://218.20.227.131:80/tmp/ 200
+http://218.20.227.131:80/xmlrpc/ 200
+http://218.20.227.131:80/plugins/ 200
+http://218.20.227.131:80/libraries/ 200
+http://218.20.227.131:80/editor2/ 200
+http://218.20.227.131:80/eWeb/ 200
+http://218.20.227.131:80/editoreweb/ 200
+http://218.20.227.131:80/sys/ 200
+http://218.20.227.131:80/456/ 200
+http://218.20.227.131:80/rpc/ 200
+http://218.20.227.131:80/mems/ 200
+http://218.20.227.131:80/gg/ 200
+http://218.20.227.131:80/mm/ 200
+http://218.20.227.131:80/diy/ 200
+http://218.20.227.131:80/asp/ 200
+http://218.20.227.131:80/php/ 200
+http://218.20.227.131:80/aspx/ 200
+http://218.20.227.131:80/web2/ 200
+http://218.20.227.131:80/web3/ 200
+http://218.20.227.131:80/test2/ 200
+http://218.20.227.131:80/mdb/ 200
+http://218.20.227.131:80/io/ 200
+http://218.20.227.131:80/include/editor/ 200
+http://218.20.227.131:80/debug/ 200
+http://218.20.227.131:80/cms2/ 200
+http://218.20.227.131:80/root1/ 200
+http://218.20.227.131:80/8/ 200
+http://218.20.227.131:80/sysimg/ 200
+http://218.20.227.131:80/img/editor/ 200
+http://218.20.227.131:80/images/editor/ 200
+http://218.20.227.131:80/image/editor/ 200
+http://218.20.227.131:80/images/ewebeditor/ 200
+http://218.20.227.131:80/images/fckeditor/ 200
+http://218.20.227.131:80/shop1/ 200
+http://218.20.227.131:80/note/ 200
+http://218.20.227.131:80/online/ 200
+http://218.20.227.131:80/game/ 200
+http://218.20.227.131:80/asd/ 200
+http://218.20.227.131:80/cc/ 200
+http://218.20.227.131:80/htmleditor/ 200
+http://218.20.227.131:80/html/editor/ 200
+http://218.20.227.131:80/new2/ 200
+http://218.20.227.131:80/new1/ 200
+http://218.20.227.131:80/zxc/ 200
+http://218.20.227.131:80/zsb/ 200
+http://218.20.227.131:80/!admin!/ 200
+http://218.20.227.131:80/link/ 200
+http://218.20.227.131:80/mywork/ 200
+http://218.20.227.131:80/jsp/ 200
+http://218.20.227.131:80/java/ 200
+http://218.20.227.131:80/system/ 200
+http://218.20.227.131:80/status/ 200
+http://218.20.227.131:80/ins/ 200
+http://218.20.227.131:80/out/ 200
+http://218.20.227.131:80/in/ 200
+http://218.20.227.131:80/editer/ 200
+http://218.20.227.131:80/pro/ 200
+http://218.20.227.131:80/conf/ 200
+http://218.20.227.131:80/config/ 200
+http://218.20.227.131:80/down1/ 200
+http://218.20.227.131:80/manage1/ 200
+http://218.20.227.131:80/admin58/ 200
+http://218.20.227.131:80/manager/editor/ 200
+http://218.20.227.131:80/manage/editor/ 200
+http://218.20.227.131:80/old/ 200
+http://218.20.227.131:80/oldsite/ 200
+http://218.20.227.131:80/ww/ 200
+http://218.20.227.131:80/www1/ 200
+http://218.20.227.131:80/windows/ 200
+http://218.20.227.131:80/day/ 200
+http://218.20.227.131:80/0/ 200
+http://218.20.227.131:80/upapi/ 200
+http://218.20.227.131:80/pages/ 200
+http://218.20.227.131:80/menus/ 200
+http://218.20.227.131:80/WEB-INF/ 200
+http://218.20.227.131:80/flash_img/ 200
+http://218.20.227.131:80/META-INF/ 200
+http://218.20.227.131:8080/#@$!%^@.asa 200
+http://218.20.227.131:80/scripts/ 200
+http://218.20.227.131:80/info/ 200
+http://218.20.227.131:80/Images/UpFile/ 200
+http://218.20.227.131:80/#@$!%^@.asa 200
+http://218.20.227.131:80/wadmin/ 200
+http://218.20.227.131:80/conndata/ 200
+http://218.20.227.131:80/lybpic/ 200
+http://218.20.227.131:80/swf/ 200
+http://218.20.227.131:80/TD_backstage/ 200
+http://218.20.227.131:80/upimage/ 200
+http://218.20.227.131:80/dyye/ 200
+http://218.20.227.135:80 server: Microsoft-IIS/7.5
+http://218.20.227.131:80/photo/ 200
+http://218.20.227.131:80/Tags/ 200
+http://218.20.227.131:80/Topic/ 200
+http://218.20.227.131:80/Notice/ 200
+http://218.20.227.131:80/Plug/ 200
+http://218.20.227.131:80/class/ 200
+http://218.20.227.131:80/products/ 200
+http://218.20.227.131:80/rodo/ 200
+http://218.20.227.131:80/file/ 200
+http://218.20.227.131:80/Tools/ 200
+http://218.20.227.131:80/templet/ 200
+http://218.20.227.131:80/LogFiles/ 200
+http://218.20.227.131:80/Resource/ 200
+http://218.20.227.131:80/wjgdata/ 200
+http://218.20.227.131:80/isapiFirewall/ 200
+http://218.20.227.131:80/shopadmin/ 200
+http://218.20.227.131:80/statics/ 200
+http://218.20.227.137:80 server: Microsoft-IIS/6.0
+http://218.20.227.131:80/api/ 200
+http://218.20.227.131:80/dbscripts/ 200
+http://218.20.227.138:80 server: Microsoft-IIS/7.5
+http://218.20.227.131:80/view/ 200
+http://218.20.227.131:80/lib/ 200
+http://218.20.227.130:80/note/ 200
+http://218.20.227.133:8080/#@$!%^@.asa 200
+http://218.20.227.130:80/index.htm 200
+http://218.20.227.137:80/Search.asp 200
+http://218.20.227.130:80/#@$!%^@.asa 200
+http://218.20.227.138:80/iisstart.htm 200
+http://218.20.227.135:80/iisstart.htm 200
+http://218.20.227.137:80/index.asp 200
+http://218.20.227.137:80/test.asp 200
+http://218.20.227.141:80 server: IBM_HTTP_Server
+http://218.20.227.142:80 server: nginx/1.9.9
+http://218.20.227.142:80/phpmyadmin/ 200
+http://218.20.227.142:80/xampp/ 200
+http://218.20.227.142:80/zabbix/ 200
+http://218.20.227.142:80/jmx-console/ 200
+http://218.20.227.142:80/nagios/ 200
+http://218.20.227.142:80/database/ 200
+http://218.20.227.142:80/databases/ 200
+http://218.20.227.142:80/www/ 200
+http://218.20.227.142:80/fckeditor/editor/filemanager/connectors/ 200
+http://218.20.227.142:80/1/ 200
+http://218.20.227.142:80/1admin/ 200
+http://218.20.227.142:80/2/ 200
+http://218.20.227.142:80/3/ 200
+http://218.20.227.142:80/homepage/ 200
+http://218.20.227.142:80/API/ 200
+http://218.20.227.138:80/#@$!%^@.asa 200
+http://218.20.227.142:80/Config/ 200
+http://218.20.227.142:80/FAQ/ 200
+http://218.20.227.142:80/FS_InterFace/ 200
+http://218.20.227.142:80/gbook/ 200
+http://218.20.227.142:80/Foosun_Data/ 200
+http://218.20.227.142:80/GuestBook/ 200
+http://218.20.227.142:80/KS_Data/ 200
+http://218.20.227.142:80/Modules/ 200
+http://218.20.227.142:80/MuAdmin/ 200
+http://218.20.227.142:80/Plus/ 200
+http://218.20.227.142:80/Search/ 200
+http://218.20.227.142:80/Templets/ 200
+http://218.20.227.142:80/User/reg/ 200
+http://218.20.227.142:80/Vote/ 200
+http://218.20.227.142:80/WEB/ 200
+http://218.20.227.142:80/_admin/ 200
+http://218.20.227.142:80/_ewebeditor/ 200
+http://218.20.227.142:80/_upload/ 200
+http://218.20.227.142:80/a/ 200
+http://218.20.227.142:80/pay/ 200
+http://218.20.227.142:80/attachment/ 200
+http://218.20.227.142:80/themes/ 200
+http://218.20.227.142:80/installer/ 200
+http://218.20.227.142:80/utility/ 200
+http://218.20.227.142:80/Agent/ 200
+http://218.20.227.142:80/aadmin/ 200
+http://218.20.227.142:80/ad_login/ 200
+http://218.20.227.142:80/ad_manage/ 200
+http://218.20.227.142:80/addmember/ 200
+http://218.20.227.142:80/adduser/ 200
+http://218.20.227.142:80/adm_login/ 200
+http://218.20.227.142:80/admin/ 200
+http://218.20.227.142:80/admin/Editor/ 200
+http://218.20.227.142:80/admin/_eWebEditor/ 200
+http://218.20.227.142:80/admin/default/ 200
+http://218.20.227.142:80/admin/eWebEditor/ 200
+http://218.20.227.142:80/admin/eweb/ 200
+http://218.20.227.142:80/admin/fckeditor/ 200
+http://218.20.227.142:80/admin/fck/ 200
+http://218.20.227.142:80/book/admin/ 200
+http://218.20.227.142:80/data/editor/ 200
+http://218.20.227.142:80/admin/index/ 200
+http://218.20.227.142:80/admin/login/ 200
+http://218.20.227.142:80/admin/manage/ 200
+http://218.20.227.142:80/admin1/ 200
+http://218.20.227.142:80/admin2/ 200
+http://218.20.227.142:80/admin88/ 200
+http://218.20.227.142:80/admin99/ 200
+http://218.20.227.142:80/admin123/ 200
+http://218.20.227.142:80/admin_/ 200
+http://218.20.227.142:80/admin_1/ 200
+http://218.20.227.142:80/admin_admin/ 200
+http://218.20.227.142:80/admin_delete/ 200
+http://218.20.227.142:80/admin_manage/ 200
+http://218.20.227.142:80/admin_manager/ 200
+http://218.20.227.142:80/admin_edit/ 200
+http://218.20.227.142:80/admin_index/ 200
+http://218.20.227.142:80/admin_login/ 200
+http://218.20.227.142:80/admin_main/ 200
+http://218.20.227.142:80/admin_user/ 200
+http://218.20.227.142:80/adminadduser/ 200
+http://218.20.227.142:80/admindelete/ 200
+http://218.20.227.142:80/adminedit/ 200
+http://218.20.227.142:80/adminlogin/ 200
+http://218.20.227.142:80/adminmember/ 200
+http://218.20.227.142:80/admintab/ 200
+http://218.20.227.142:80/admintest/ 200
+http://218.20.227.142:80/adminuserlogin/ 200
+http://218.20.227.142:80/art/ 200
+http://218.20.227.142:80/article/ 200
+http://218.20.227.142:80/ask/ 200
+http://218.20.227.142:80/aspnet_client/ 200
+http://218.20.227.142:80/avi/ 200
+http://218.20.227.142:80/bbs/ 200
+http://218.20.227.142:80/bianji/ 200
+http://218.20.227.142:80/bin/ 200
+http://218.20.227.142:80/bjq/ 200
+http://218.20.227.142:80/blog/ 200
+http://218.20.227.142:80/book/ 200
+http://218.20.227.142:80/boy/ 200
+http://218.20.227.142:80/check/ 200
+http://218.20.227.142:80/checkadmin/ 200
+http://218.20.227.142:80/chkadmin/ 200
+http://218.20.227.142:80/chklogin/ 200
+http://218.20.227.142:80/club/ 200
+http://218.20.227.142:80/cms/ 200
+http://218.20.227.142:80/cms1/ 200
+http://218.20.227.142:80/config/admin/ 200
+http://218.20.227.142:80/count/ 200
+http://218.20.227.142:80/count/admin/ 200
+http://218.20.227.137:80/#@$!%^@.asa 200
+http://218.20.227.135:80/#@$!%^@.asa 200
+http://218.20.227.142:80/d/ 200
+http://218.20.227.142:80/data/ 200
+http://218.20.227.142:80/data/admin/ 200
+http://218.20.227.142:80/database/ 200
+http://218.20.227.142:80/databases/ 200
+http://218.20.227.142:80/date/ 200
+http://218.20.227.142:80/db/ 200
+http://218.20.227.142:80/dbase/ 200
+http://218.20.227.142:80/dede/ 200
+http://218.20.227.142:80/delete/ 200
+http://218.20.227.142:80/denglu/ 200
+http://218.20.227.142:80/devel/ 200
+http://218.20.227.142:80/down/ 200
+http://218.20.227.141:80/images/ 200
+http://218.20.227.142:80/e/ 200
+http://218.20.227.142:80/e/admin/ 200
+http://218.20.227.142:80/edit/ 200
+http://218.20.227.142:80/editmember/ 200
+http://218.20.227.142:80/editor/ 200
+http://218.20.227.142:80/editors/ 200
+http://218.20.227.142:80/edituser/ 200
+http://218.20.227.142:80/eeditor/ 200
+http://218.20.227.142:80/eweb/ 200
+http://218.20.227.142:80/ewebeditor/ 200
+http://218.20.227.141:80/index.html 200
+http://218.20.227.142:80/exit/ 200
+http://218.20.227.142:80/fck/ 200
+http://218.20.227.142:80/fckeditor/ 200
+http://218.20.227.142:80/fd_upload/ 200
+http://218.20.227.142:80/fileeditor/ 200
+http://218.20.227.142:80/files/ 200
+http://218.20.227.142:80/fileseditor/ 200
+http://218.20.227.142:80/forum/ 200
+http://218.20.227.142:80/girl/ 200
+http://218.20.227.142:80/html/admin/ 200
+http://218.20.227.142:80/html/data/ 200
+http://218.20.227.142:80/image/admin/ 200
+http://218.20.227.142:80/images/admin/ 200
+http://218.20.227.142:80/girls/ 200
+http://218.20.227.142:80/gldl/ 200
+http://218.20.227.142:80/guanli/ 200
+http://218.20.227.142:80/guestbook/admin/ 200
+http://218.20.227.142:80/sp/ 200
+http://218.20.227.142:80/ka/ 200
+http://218.20.227.142:80/core/ 200
+http://218.20.227.142:80/guestbook/data/ 200
+http://218.20.227.142:80/guestbook/database/ 200
+http://218.20.227.142:80/help/ 200
+http://218.20.227.142:80/houtai/ 200
+http://218.20.227.142:80/houtaiguanli/ 200
+http://218.20.227.142:80/htdocs/ 200
+http://218.20.227.142:80/htgl/ 200
+http://218.20.227.142:80/html/ 200
+http://218.20.227.142:80/idea/ 200
+http://218.20.227.142:80/ideas/ 200
+http://218.20.227.142:80/images/ 200
+http://218.20.227.142:80/img/ 200
+http://218.20.227.142:80/imgs/ 200
+http://218.20.227.142:80/inc/ 200
+http://218.20.227.142:80/include/ 200
+http://218.20.227.142:80/includeinc/ 200
+http://218.20.227.142:80/includes/ 200
+http://218.20.227.142:80/includes/fckeditor/ 200
+http://218.20.227.142:80/incoming/ 200
+http://218.20.227.142:80/incsub/ 200
+http://218.20.227.142:80/index_admin/ 200
+http://218.20.227.142:80/index_manage/ 200
+http://218.20.227.142:80/install/ 200
+http://218.20.227.142:80/item/ 200
+http://218.20.227.142:80/js/ 200
+http://218.20.227.142:80/languages/ 200
+http://218.20.227.142:80/log/ 200
+http://218.20.227.142:80/login/ 200
+http://218.20.227.142:80/login_admin/ 200
+http://218.20.227.142:80/login_out/ 200
+http://218.20.227.142:80/logout/ 200
+http://218.20.227.142:80/luntan/ 200
+http://218.20.227.142:80/main/ 200
+http://218.20.227.142:80/man/ 200
+http://218.20.227.142:80/manage/ 200
+http://218.20.227.142:80/manage_index/ 200
+http://218.20.227.142:80/manager/ 200
+http://218.20.227.142:80/manual/ 200
+http://218.20.227.142:80/member/ 200
+http://218.20.227.142:80/members/ 200
+http://218.20.227.142:80/misc/ 200
+http://218.20.227.142:80/movie/ 200
+http://218.20.227.142:80/mrtg/ 200
+http://218.20.227.142:80/new/ 200
+http://218.20.227.142:80/neweditor/ 200
+http://218.20.227.142:80/news/ 200
+http://218.20.227.142:80/newseditor/ 200
+http://218.20.227.142:80/newsite/ 200
+http://218.20.227.142:80/none/ 200
+http://218.20.227.142:80/packages/ 200
+http://218.20.227.142:80/party/ 200
+http://218.20.227.142:80/php_admin/ 200
+http://218.20.227.142:80/phpmyadmin/ 200
+http://218.20.227.142:80/pic/ 200
+http://218.20.227.142:80/play/ 200
+http://218.20.227.142:80/private/ 200
+http://218.20.227.142:80/program/ 200
+http://218.20.227.142:80/programming/ 200
+http://218.20.227.142:80/programs/ 200
+http://218.20.227.142:80/public/ 200
+http://218.20.227.142:80/reg/ 200
+http://218.20.227.142:80/rmvb/ 200
+http://218.20.227.142:80/root/ 200
+http://218.20.227.142:80/rss/ 200
+http://218.20.227.142:80/rar/ 200
+http://218.20.227.142:80/secret/ 200
+http://218.20.227.142:80/secrets/ 200
+http://218.20.227.142:80/server-info/ 200
+http://218.20.227.142:80/server-status/ 200
+http://218.20.227.142:80/server_stats/ 200
+http://218.20.227.142:80/set/ 200
+http://218.20.227.142:80/setting/ 200
+http://218.20.227.142:80/setup/ 200
+http://218.20.227.142:80/shop/ 200
+http://218.20.227.142:80/shuaiwebDB/ 200
+http://218.20.227.142:80/site/ 200
+http://218.20.227.142:80/special/ 200
+http://218.20.227.142:80/sql/ 200
+http://218.20.227.142:80/styles/ 200
+http://218.20.227.142:80/superadmin/ 200
+http://218.20.227.142:80/support/ 200
+http://218.20.227.142:80/template/ 200
+http://218.20.227.142:80/tenpay/ 200
+http://218.20.227.142:80/test/ 200
+http://218.20.227.142:80/test1/ 200
+http://218.20.227.142:80/tools/ 200
+http://218.20.227.142:80/up/ 200
+http://218.20.227.142:80/update/ 200
+http://218.20.227.142:80/update/ 200
+http://218.20.227.142:80/upfile/ 200
+http://218.20.227.142:80/upfiles/ 200
+http://218.20.227.142:80/upload/ 200
+http://218.20.227.142:80/upload/admin/ 200
+http://218.20.227.142:80/uploadfile/ 200
+http://218.20.227.142:80/uploadfiles/ 200
+http://218.20.227.142:80/uploadimg/ 200
+http://218.20.227.142:80/uploads/ 200
+http://218.20.227.142:80/user/ 200
+http://218.20.227.142:80/user/login/ 200
+http://218.20.227.142:80/userfiles/ 200
+http://218.20.227.142:80/users/ 200
+http://218.20.227.142:80/video/ 200
+http://218.20.227.142:80/plugin/ 200
+http://218.20.227.142:80/webeditor/ 200
+http://218.20.227.142:80/weblog/ 200
+http://218.20.227.142:80/webmaster/ 200
+http://218.20.227.142:80/website/ 200
+http://218.20.227.142:80/xtwh/ 200
+http://218.20.227.142:80/管理/ 200
+http://218.20.227.142:80/新建文件夹/ 200
+http://218.20.227.142:80/home/ 200
+http://218.20.227.142:80/www/ 200
+http://218.20.227.142:80/bak/ 200
+http://218.20.227.142:80/backup/ 200
+http://218.20.227.142:80/backups/ 200
+http://218.20.227.142:80/webroot/ 200
+http://218.20.227.142:80/databackup/ 200
+http://218.20.227.142:80/databackups/ 200
+http://218.20.227.142:80/beifen/ 200
+http://218.20.227.142:80/网站备份/ 200
+http://218.20.227.142:80/备份/ 200
+http://218.20.227.142:80/ftp/ 200
+http://218.20.227.142:80/include/FCKeditor/ 200
+http://218.20.227.142:80/htmlEditor/ 200
+http://218.20.227.142:80/wwwroot/ 200
+http://218.20.227.142:80/userupload/ 200
+http://218.20.227.142:80/opt/ 200
+http://218.20.227.142:80/en/ 200
+http://218.20.227.142:80/cn/ 200
+http://218.20.227.142:80/admin_upload/ 200
+http://218.20.227.142:80/ewebeditor/UploadFile/ 200
+http://218.20.227.142:80/ckeditor/ 200
+http://218.20.227.142:80/txt/ 200
+http://218.20.227.142:80/admin3/ 200
+http://218.20.227.142:80/admin4/ 200
+http://218.20.227.142:80/adminbak/ 200
+http://218.20.227.142:80/adminnew/ 200
+http://218.20.227.142:80/wwwroot2/ 200
+http://218.20.227.142:80/index/ 200
+http://218.20.227.142:80/123/ 200
+http://218.20.227.142:80/Controls/ 200
+http://218.20.227.142:80/Dialog/ 200
+http://218.20.227.142:80/css/ 200
+http://218.20.227.142:80/DevAdmin/ 200
+http://218.20.227.142:80/ClientScript/ 200
+http://218.20.227.142:80/Forums/ 200
+http://218.20.227.142:80/FeedManager/ 200
+http://218.20.227.142:80/deep_inc/ 200
+http://218.20.227.142:80/Services/ 200
+http://218.20.227.142:80/Setup/ 200
+http://218.20.227.142:80/WebStore/ 200
+http://218.20.227.142:80/SiteOffice/ 200
+http://218.20.227.142:80/Survey/ 200
+http://218.20.227.142:80/picture/ 200
+http://218.20.227.142:80/myweb/ 200
+http://218.20.227.142:80/Secure/ 200
+http://218.20.227.142:80/Poll/ 200
+http://218.20.227.142:80/NeatUpload/ 200
+http://218.20.227.142:80/Admin_mj/ 200
+http://218.20.227.142:80/ButtonImage/ 200
+http://218.20.227.142:80/Example/ 200
+http://218.20.227.142:80/App_Data/ 200
+http://218.20.227.142:80/admin/database/ 200
+http://218.20.227.142:80/admin/data/ 200
+http://218.20.227.142:80/go/ 200
+http://218.20.227.142:80/网站/ 200
+http://218.20.227.142:80/网站2/ 200
+http://218.20.227.142:80/liuyan/ 200
+http://218.20.227.142:80/ly/ 200
+http://218.20.227.142:80/1.asp/ 200
+http://218.20.227.142:80/t/ 200
+http://218.20.227.142:80/1.php/ 200
+http://218.20.227.142:80/open/ 200
+http://218.20.227.142:80/show/ 200
+http://218.20.227.142:80/http/ 200
+http://218.20.227.142:80/gl/ 200
+http://218.20.227.142:80/admin/bak/ 200
+http://218.20.227.142:80/flash/ 200
+http://218.20.227.142:80/administrator/ 200
+http://218.20.227.142:80/cache/ 200
+http://218.20.227.142:80/components/ 200
+http://218.20.227.142:80/installation/ 200
+http://218.20.227.142:80/tmp/ 200
+http://218.20.227.142:80/xmlrpc/ 200
+http://218.20.227.142:80/plugins/ 200
+http://218.20.227.142:80/libraries/ 200
+http://218.20.227.142:80/editor2/ 200
+http://218.20.227.142:80/eWeb/ 200
+http://218.20.227.142:80/editoreweb/ 200
+http://218.20.227.142:80/sys/ 200
+http://218.20.227.142:80/456/ 200
+http://218.20.227.142:80/rpc/ 200
+http://218.20.227.142:80/mems/ 200
+http://218.20.227.142:80/gg/ 200
+http://218.20.227.142:80/mm/ 200
+http://218.20.227.142:80/diy/ 200
+http://218.20.227.142:80/asp/ 200
+http://218.20.227.142:80/php/ 200
+http://218.20.227.142:80/aspx/ 200
+http://218.20.227.142:80/web2/ 200
+http://218.20.227.142:80/web3/ 200
+http://218.20.227.142:80/test2/ 200
+http://218.20.227.142:80/mdb/ 200
+http://218.20.227.142:80/io/ 200
+http://218.20.227.142:80/include/editor/ 200
+http://218.20.227.142:80/debug/ 200
+http://218.20.227.142:80/cms2/ 200
+http://218.20.227.142:80/root1/ 200
+http://218.20.227.142:80/8/ 200
+http://218.20.227.142:80/sysimg/ 200
+http://218.20.227.142:80/img/editor/ 200
+http://218.20.227.142:80/images/editor/ 200
+http://218.20.227.142:80/image/editor/ 200
+http://218.20.227.142:80/images/ewebeditor/ 200
+http://218.20.227.142:80/images/fckeditor/ 200
+http://218.20.227.142:80/shop1/ 200
+http://218.20.227.142:80/note/ 200
+http://218.20.227.142:80/online/ 200
+http://218.20.227.142:80/game/ 200
+http://218.20.227.142:80/asd/ 200
+http://218.20.227.142:80/cc/ 200
+http://218.20.227.142:80/htmleditor/ 200
+http://218.20.227.142:80/html/editor/ 200
+http://218.20.227.142:80/new2/ 200
+http://218.20.227.142:80/new1/ 200
+http://218.20.227.142:80/zxc/ 200
+http://218.20.227.142:80/zsb/ 200
+http://218.20.227.142:80/!admin!/ 200
+http://218.20.227.142:80/link/ 200
+http://218.20.227.142:80/mywork/ 200
+http://218.20.227.142:80/jsp/ 200
+http://218.20.227.142:80/java/ 200
+http://218.20.227.142:80/system/ 200
+http://218.20.227.142:80/status/ 200
+http://218.20.227.142:80/ins/ 200
+http://218.20.227.142:80/out/ 200
+http://218.20.227.142:80/in/ 200
+http://218.20.227.142:80/editer/ 200
+http://218.20.227.142:80/pro/ 200
+http://218.20.227.142:80/conf/ 200
+http://218.20.227.142:80/config/ 200
+http://218.20.227.142:80/down1/ 200
+http://218.20.227.142:80/manage1/ 200
+http://218.20.227.142:80/admin58/ 200
+http://218.20.227.142:80/manager/editor/ 200
+http://218.20.227.142:80/manage/editor/ 200
+http://218.20.227.142:80/old/ 200
+http://218.20.227.142:80/oldsite/ 200
+http://218.20.227.142:80/ww/ 200
+http://218.20.227.142:80/www1/ 200
+http://218.20.227.142:80/windows/ 200
+http://218.20.227.142:80/day/ 200
+http://218.20.227.142:80/0/ 200
+http://218.20.227.142:80/upapi/ 200
+http://218.20.227.142:80/pages/ 200
+http://218.20.227.142:80/menus/ 200
+http://218.20.227.142:80/WEB-INF/ 200
+http://218.20.227.142:80/flash_img/ 200
+http://218.20.227.142:80/META-INF/ 200
+http://218.20.227.142:80/scripts/ 200
+http://218.20.227.142:80/info/ 200
+http://218.20.227.142:80/Images/UpFile/ 200
+http://218.20.227.142:80/#@$!%^@.asa 200
+http://218.20.227.142:80/wadmin/ 200
+http://218.20.227.142:80/conndata/ 200
+http://218.20.227.142:80/lybpic/ 200
+http://218.20.227.142:80/swf/ 200
+http://218.20.227.142:80/TD_backstage/ 200
+http://218.20.227.142:80/upimage/ 200
+http://218.20.227.142:80/dyye/ 200
+http://218.20.227.142:80/photo/ 200
+http://218.20.227.142:80/Tags/ 200
+http://218.20.227.148:80 server: Microsoft-IIS/6.0
+http://218.20.227.142:80/Topic/ 200
+http://218.20.227.142:80/Notice/ 200
+http://218.20.227.142:80/Plug/ 200
+http://218.20.227.142:80/class/ 200
+http://218.20.227.142:80/products/ 200
+http://218.20.227.142:80/rodo/ 200
+http://218.20.227.142:80/file/ 200
+http://218.20.227.142:80/Tools/ 200
+http://218.20.227.142:80/templet/ 200
+http://218.20.227.142:80/LogFiles/ 200
+http://218.20.227.142:80/Resource/ 200
+http://218.20.227.142:80/wjgdata/ 200
+http://218.20.227.142:80/isapiFirewall/ 200
+http://218.20.227.142:80/shopadmin/ 200
+http://218.20.227.142:80/statics/ 200
+http://218.20.227.142:80/api/ 200
+http://218.20.227.142:80/dbscripts/ 200
+http://218.20.227.142:80/view/ 200
+http://218.20.227.142:80/lib/ 200
+http://218.20.227.141:80/#@$!%^@.asa 200
+http://218.20.227.148:80/1.asp 200
+http://218.20.227.148:80/1.asp 200
+http://218.20.227.148:80/default.asp 200
+http://218.20.227.148:80/e/ 200
+http://218.20.227.148:80/index.html 200
+http://218.20.227.151:80 server: Apache-Coyote/1.1
+http://218.20.227.152:80 HTTP Error 403: Forbidden
+http://218.20.227.152:8001 server: IBM_HTTP_Server
+http://218.20.227.148:80/123.asp 200
+http://218.20.227.151:80/index.jsp 200
+http://218.20.227.148:80/123.txt 200
+http://218.20.227.152:8001/images/ 200
+http://218.20.227.152:8001/index.html 200
+http://218.20.227.148:80/#@$!%^@.asa 200
+http://218.20.227.151:80/#@$!%^@.asa 200
+http://218.20.227.152:8001/#@$!%^@.asa 200
+http://218.20.227.158:80 server: Microsoft-IIS/5.0
+http://218.20.227.158:80/robots.txt 200
+http://218.20.227.34:80 server: Microsoft-IIS/7.5
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.36:81 server: Microsoft-IIS/7.5
+http://218.20.227.35:80 HTTP Error 403: Forbidden
+http://218.20.227.36:80 HTTP Error 403: Forbidden
+http://218.20.227.37:80 server: WWW Server/1.1
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.36:81 server: Microsoft-IIS/7.5
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.131:8080 server: Apache-Coyote/1.1
+http://218.20.227.133:8080 server: Apache-Coyote/1.1
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.36:81 server: Microsoft-IIS/7.5
+http://218.20.227.34:8081 server: Microsoft-IIS/7.5
+http://218.20.227.36:81 server: Microsoft-IIS/7.5

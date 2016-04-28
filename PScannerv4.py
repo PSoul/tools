@@ -74,7 +74,7 @@ def listCIDR(c):
     baseIP = ip2bin(parts[0])
     subnet = int(parts[1])
     if subnet == 32:
-        print bin2ip(baseIP)
+        op_queue.put(bin2ip(baseIP))
     else:
         ipPrefix = baseIP[:-(32-subnet)]
         for i in range(2**(32-subnet)):
@@ -97,7 +97,7 @@ def port_run(target, port, timeout, filename, burps , noburp):
             op_queue.put(url)
             try:
                 urlopen = opener.open(url, timeout=timeout)
-                sys.stderr.write(url + ' server:' + urlopen.headers['server'] + '\n')
+                print(url + ' server:' + urlopen.headers['server'])
                 f.write(url + ' server: ' + urlopen.headers['server'] + '\n')
                 f.flush()
                 # sys.stderr.write('try to find 404 page \r')

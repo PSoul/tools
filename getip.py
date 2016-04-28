@@ -1,29 +1,22 @@
 import socket
 import threading
 import Queue
-import requests
-import json
 import sys
+import requests
+import os
 import urlparse
 from BeautifulSoup import BeautifulSoup
 
-ip_list = {}
+ip_list = []
 socket.setdefaulttimeout(3)
 
 
 def worker(domain):
     try:
         ip = socket.gethostbyname(domain)
-        a = ip.split('.')[0:3]
-        b = '.'.join(a)
     except:
         ip = ''
-        b = 'N/A'
-    try:
-        ip_list[b].append(domain + ':' + str(ip))
-    except:
-        ip_list[b] = []
-        ip_list[b].append(domain + ':' + str(ip))
+    ip_list.append(ip)
 
 
 def run(q):
@@ -33,11 +26,18 @@ def run(q):
         q.task_done()
 
 
-def main(d_name):
-    domain = d_name
-    domain_dict = {}
+def main():
+    domain = sys.argv[1]
+    try:
+        fname = sys.argv[2]
+    except:
+        fname = 'ips.txt'
+    try:
+        os.remove(fname)
+    except:
+        pass
     header = {"User-Agent": 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWeb'
-                            'Kit/600.1.25 (KHTML, like Gecko) Version/8.0 Safari/600.1.25'}
+                        'Kit/600.1.25 (KHTML, like Gecko) Version/8.0 Safari/600.1.25'}
     post = {'domain': '%s' % domain, 'b2': 1, 'b3': 1, 'b4': 1}
     res = requests.post('http://i.links.cn/subdomain/', data=post, headers=header)
     soup = BeautifulSoup(res.text)
@@ -46,21 +46,26 @@ def main(d_name):
     for i in a:
         text = i.text
         text1 = text.split('.')[1:]
+        # print '.'.join(text1)
         up = urlparse.urlparse('.'.join(text1))
-        # print up.netloc
+        print up.netloc
         q.put(up.netloc)
     for t in range(20):
         t1 = threading.Thread(target=run, args=(q, ))
         t1.setDaemon(True)
         t1.start()
     q.join()
-    for (k, v) in ip_list.items():
-        for va in v:
-            domain = va.split(':')[0]
-            ip = va.split(':')[1]
-            domain_dict[domain] = ip
-    print json.dumps(domain_dict)
+    new_list = set(ip_list)
+    new1_list = []
+    for item in new_list:
+        a = item.split('.')[0:3]
+        new1_list.append('.'.join(a))
+    f = open(fname, 'a')
+    print 'the ip list is:'
+    for ip in set(new1_list):
+        f.write(ip + '.0/24 \n')
+        print ip + '.0/24'
+    f.close()
 
-if __name__ == "__main__":
-    domain = sys.argv[1]
-    main(domain)
+if __name__ == '__main__':
+    main()
